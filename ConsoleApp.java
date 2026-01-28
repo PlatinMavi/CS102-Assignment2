@@ -23,4 +23,24 @@ public class ConsoleApp{
         }
         return randomArray;
     }
+
+    public static double averageArray(int[] arr) {
+        double sum = 0;
+        for (int x : arr) 
+        {
+            sum += x;
+        }
+        return sum / arr.length;
+    }
+
+    public static void differenceFromAverage(int[] arr) {
+        double average = averageArray(arr);
+        System.out.print("Differences from average: ");
+        for (int i = 0; i < arr.length; i++) 
+        {
+            System.out.print((arr[i] - average) + " ");
+        }
+        System.out.println();
+    }
+
 }
