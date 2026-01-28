@@ -6,7 +6,6 @@ public class ConsoleApp{
     {
         int size = 10;
         int[] arr = randomArrayGenerator(size);
-
         // all the work will be shown in here
     }
 
@@ -41,6 +40,36 @@ public class ConsoleApp{
             System.out.print((arr[i] - average) + " ");
         }
         System.out.println();
+    }
+
+    /**
+     * This function takes an integer array and loops over it by increasing the index 2 at a time to get elements with even indexes starting with index 1.
+     * @param arr int[]
+     * @return Returns the sum of elemets in an int array with even index.
+     */
+    public static int sumOfEvenIndexElements(int [] arr) {
+        int sum = 0;
+
+        for (int i = 0; i < arr.length; i = i + 2){
+            sum += arr[i];
+        }
+
+        return sum;
+    }
+
+    /**
+     * This function takes an integer array and loops over it by increasing the index 2 at a time to get elements with odd indexes starting with index 1.
+     * @param arr int[]
+     * @return Returns the sum of elemets in an int array with even index.
+     */
+    public static int sumOfOddIndexElements(int [] arr) {
+        int sum = 0;
+
+        for (int i = 1; i < arr.length; i = i + 2){
+            sum += arr[i];
+        }
+
+        return sum;
     }
 
 }
