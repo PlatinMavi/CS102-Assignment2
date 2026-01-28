@@ -43,7 +43,7 @@ public class ConsoleApp{
     }
 
     /**
-     * This function takes an integer array and loops over it by increasing the index 2 at a time to get elements with even indexes starting with index 1.
+     * This function takes an integer array and loops over it by increasing the index 2 at a time to get elements with even indexes starting with index 0.
      * @param arr int[]
      * @return Returns the sum of elemets in an int array with even index.
      */
