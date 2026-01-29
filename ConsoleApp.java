@@ -16,7 +16,6 @@ public class ConsoleApp {
 
             switch (decision) {
                 case 1:
-                    // TODO: call the minimum and maximum method and properly display
                     System.out.println("Minimum value: " + findMin(arr));
                     System.out.println("Maximum value: " + findMax(arr));
                     break;
