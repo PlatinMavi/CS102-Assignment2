@@ -17,6 +17,8 @@ public class ConsoleApp {
             switch (decision) {
                 case 1:
                     // TODO: call the minimum and maximum method and properly display
+                    System.out.println("Minimum value: " + findMin(arr));
+                    System.out.println("Maximum value: " + findMax(arr));
                     break;
                 case 2:
                     differenceFromAverage(arr);
@@ -128,6 +130,28 @@ public class ConsoleApp {
         }
 
         return sum;
+    }
+
+    // findMin fuction finds and returns the smallest value in the array
+    public static int findMin(int[] arr) {
+        int min = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+
+    // findMax fuction finds and returns the largest value in the array
+    public static int findMax(int[] arr) {
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
     }
 
 }
